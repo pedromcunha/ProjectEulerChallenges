@@ -1,9 +1,11 @@
 var http = require('http');
 
 // Configure our HTTP server to respond with Hello World to all requests.
-var server = http.createServer(function (request, response) {
-  response.writeHead(200, {"Content-Type": "text/plain"});
-  response.end("Hello World\n");
+var server = http.createServer(function(request, response) {
+    response.writeHead(200, {
+        "Content-Type": "text/plain"
+    });
+    response.end("Hello World\n");
 });
 
 // Listen on port 8000, IP defaults to 127.0.0.1
@@ -82,4 +84,21 @@ console.log("Server running at http://127.0.0.1:8000/");
 /*===============================================*/
 /*=============== FIFTH PROBLEM =================*/
 /*===============================================*/
+// function FIFTHPROBLEM() {
+//     var divisibleEvenlyBy = [];
 
+//     for (var i = 1; i < 100000000; i++) {
+//     	divisibleEvenlyBy = [];
+//         for (var ii = 1; ii < 21; ii++) {
+//             if (i / ii % 2 === 0) {
+//                 divisibleEvenlyBy.push(ii);
+//             } 
+//             if (divisibleEvenlyBy.length === 20) {
+//             	console.log(divisibleEvenlyBy);
+//                 return i;
+//             }
+//         }
+//     }
+// }
+
+// console.log(FIFTHPROBLEM());
